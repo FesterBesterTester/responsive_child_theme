@@ -1,0 +1,291 @@
+/*
+Theme Name:     Responsive Theme Customizations by Randy
+Theme URI:      http://candoran.com/
+Description:    Child theme for the Responsive theme 
+Author:         Randy Salvo
+Author URI:     http://candoran.com
+Template:       responsive
+Version:        0.2.0
+*/
+
+@import url("../responsive/style.css");
+
+#logo
+{
+  padding: 10px;
+}
+
+body
+{
+  background: none repeat scroll 0 0 #005072;
+  font-family: 'Droid Serif', serif;
+  font-size: 0.8em;
+}
+
+table form
+{
+  margin: 0;
+}
+
+table
+{
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+th
+{
+  font-weight: bold;
+}
+
+th, td
+{
+  border: 1px solid #000000; 
+  white-space: nowrap; /* disallow line wrapping */
+}
+
+#content-full
+{
+  margin-top: 0px; /* social-icons add additional vertical space, thus making this unnecessary. */
+  margin-bottom: 20px;
+}
+
+#header
+{
+background: url('./images/gray_spark.png') no-repeat fixed -150px -150px white;
+}
+
+#header #searchform
+{
+  font-size: 0.9em;
+  margin-right: 10px;
+}
+
+#header #s
+{
+  width:72%;
+}
+
+@media screen and (min-width: 651px)
+{
+  /* when the width is < 651px, javascript is used to toggle the display mode
+     of menu-navigation-menu. If it sets display:none, then element.style will
+     be display: none, which will prevent this css rule from taking effect
+     without !important.
+  */
+  #menu-navigation-menu
+  {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 650px)
+{
+  .js .main-nav
+  {
+    background: none repeat scroll 0 0 #005072;
+    color: #FFC700;
+  }
+
+  .js .main-nav #responsive_current_menu_item
+  {
+    color: #FFC700;
+  }
+
+  .js .main-nav a#responsive_menu_button
+  {
+    background: url("./images/select-icons.png") no-repeat scroll 0 5px transparent;
+    color: #FFC700;
+  }
+
+  .js .main-nav a#responsive_menu_button.responsive-toggle-open
+  {
+    background: url("./images/select-icons.png") no-repeat scroll 0 -46px transparent;
+  }
+
+  .js .main-nav .menu li,
+  .js .main-nav .menu li a
+  {
+    background: none repeat scroll 0 0 #005072;
+    border-color: #FFC700;
+    color: #FFC700;
+  }
+}
+
+#footer,
+#footer a
+{
+  color: gray;
+}
+
+#footer .powered a
+{
+  padding: 5px;
+}
+
+.copyright,.scroll-top,.powered
+{
+  /* keeps copyright, etc in footer all on one line when screen is very wide */
+  float: left;
+}
+
+.fb-like-box
+{
+  width: 100%;
+}
+
+.fb-like-box > span,
+.fb-like-box > span > iframe
+{
+  width: 100% !important;
+}
+
+.fill-widget
+{
+  padding: 0;
+}
+
+.js .main-nav .menu li a:hover,
+.js .main-nav .menu li li:hover,
+.js .main-nav .menu li li a:hover
+{
+  background: none repeat scroll 0 0 #DC291E !important;
+  color: #FFC700;
+}
+
+.js .main-nav .menu ul
+{
+  margin-top: 0;
+}
+
+.menu li li
+{
+  margin: 0;
+}
+
+.menu ul
+{
+  border-bottom-color: #FFC700;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-top-color: #FFC700;
+  border-top-width: 1px;
+  border-top-style: solid;
+  margin-top: 0;
+}
+
+#wrapper
+{
+  box-shadow: 4px 0 6px -4px #cccccc, -4px 0 6px -4px #cccccc;
+}
+
+.menu
+{
+  background: none repeat scroll 0 0 #005072; /* from styles-new5.css #cftopnavlinks a */
+  border-bottom: 2px solid #FFC700;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  color: #FFC700; /* from styles-new5.css #cftopnavlinks a */
+}
+
+/* from styles-new5.css #cftopnavlinks a */
+.menu a
+{
+  background: none repeat scroll 0 0 #005072;
+  color: #FFC700;
+  font-family: Arial,sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.menu > li:hover:after
+{
+  border-bottom: 10px solid #FFC700;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: 0;
+  content: "";
+  height: 0;
+  left: 50%;
+  margin-left: -10px;
+  position: absolute;
+}
+
+/* from #cftopnavlinks > ul > li:hover > a */
+.menu > li:hover > a
+{
+  background: none repeat scroll 0 0 #DC291E;
+  color: #FFC700;
+}
+
+.menu li li
+{
+  background: none repeat scroll 0 0 #005072;
+  color: #FFC700;
+}
+
+.menu li li:first-child
+{
+  border-top: 2px solid #FFC700;
+}
+
+.menu li li a
+{
+  background: none repeat scroll 0 0 #005072;
+  color: #FFC700;
+  font-family: Arial,sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.menu li li a:hover
+{
+  background: none repeat scroll 0 0 #DC291E !important;
+  color: #FFC700;
+}
+
+/* from styles-new5.css #cftopnavlinks a */
+.menu .current_page_item a
+{
+  background: none repeat scroll 0 0 #005072;
+  color: #FFC700;
+}
+
+.right
+{
+  float: right;
+}
+
+.shaded
+{
+  background-color:#EAEAEA; 
+}
+
+.social-icons
+{
+  text-align: right;
+  list-style: none outside none;
+}
+
+.social-icons li
+{
+  display: inline-block;
+  margin: 6px;
+}
+
+.social-icons ul
+{
+  margin: 0;
+}
+
+#wrapper
+{
+  background: url('./images/gray_spark.png') no-repeat fixed -150px -150px white;
+  border-radius: 0px;
+  margin: 0px;
+}
+
+
+
