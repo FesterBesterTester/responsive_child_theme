@@ -139,7 +139,7 @@ function social_buttons()
     .'</a></li>';
 
   echo '<li><a href="/get-involved/donate/"><img src="' . get_stylesheet_directory_uri() . '/icons/donate-icon.png" alt="donate" /></a></li>';
-  echo '<li><a href="http://www.amazon.com/gp/registry/wishlist/34MY4LW1EWB3O"><img src="' . get_stylesheet_directory_uri() . '/icons/wishlist.png" alt="Amazon wishlist" /></a></li>';
+  echo '<li><a href="https://www.amazon.com/gp/registry/wishlist/34MY4LW1EWB3O"><img src="' . get_stylesheet_directory_uri() . '/icons/wishlist.png" alt="Amazon wishlist" /></a></li>';
 
   echo '</ul>';
   echo '</div><!-- end of .social-icons -->';
@@ -148,7 +148,7 @@ function social_buttons()
 
 function set_font()
 {
-  echo "<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css' />\n";
+  echo "<link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css' />\n";
 }
 
 
