@@ -18,8 +18,8 @@ Version:        0.2.0
 body
 {
   background: none repeat scroll 0 0 #005072;
+  color: #005072; /* font color */
   font-family: 'Droid Serif', serif;
-  font-size: 0.8em;
 }
 
 table form
@@ -113,6 +113,104 @@ background: url('./images/gray_spark.png') no-repeat fixed -150px -150px white;
     color: #FFC700;
   }
 }
+
+.clickable-area
+{
+  display: block;
+  text-decoration: none;
+}
+
+.left
+{
+  float: left;
+}
+
+.center
+{
+  display: inline-block;
+  text-align: center;
+}
+
+.clear
+{
+  clear: both;
+}
+
+.flex-area
+{
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+.flex-item
+{
+  flex: 1 1 auto;
+  font-size: 0.8em;
+  position: relative;
+  background: rgba(200,200,200,0.7);
+  border-radius: 15px;
+  margin: 15px;
+  text-align: center;
+}
+
+.flex-item h4
+{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.flex-item :last-child 
+{
+  border-radius: 0 0 15px 15px;
+  margin-bottom: 0;
+}
+
+.flex-item img
+{
+  width: 100%;
+}
+
+@media screen and (min-width: 981px) {
+  .flex-item
+  {
+    max-width: 25%;
+    min-width: 170px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .flex-item
+  {
+    max-width: 25%;
+    min-width: 155px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .flex-item
+  {
+    max-width: 40%;
+    min-width: 155px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .flex-item
+  {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+}
+
+@media screen and (max-width: 240px) {
+}
+
+
+
 
 #footer,
 #footer a
